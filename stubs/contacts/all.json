@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "firstName": "Jon",
+        "surname": "Snow",
+        "email": "Jon.Snow@example.com",
+        "groupId": 1
+    },
+    {
+        "id": 2,
+        "firstName": "Ned",
+        "surname": "Stark",
+        "email": "Ned.Stark@example.com",
+        "groupId": 1
+    },
+    {
+        "id": 3,
+        "firstName": "Robert",
+        "surname": "Baratheon",
+        "email": "Robert.Baratheon@example.com",
+        "groupId": 2
+    },
+    {
+        "id": 4,
+        "firstName": "Jaime",
+        "surname": "Lannister",
+        "email": "Jaime.Lannister@example.com",
+        "groupId": 2
+    },
+    {
+        "id": 5,
+        "firstName": "Daenerys",
+        "surname": "Targaryen",
+        "email": "Daenerys.Targaryen@example.com",
+        "groupId": 2
+    }
+]

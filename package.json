@@ -7,7 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "dev": "ng serve",
+    "stubs": "stubby -d ./stubs/api.yml --watch",
+    "dev:stubs": "npm-run-all --parallel dev stubs"
   },
   "private": true,
   "dependencies": {
