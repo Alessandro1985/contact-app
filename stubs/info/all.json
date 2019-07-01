@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "role": "Doctor"
+    },
+    {
+        "id": 2,
+        "role": "Manger"
+    },
+    {
+        "id": 3,
+        "role": "Fire fighter"
+    },
+    {
+        "id": 4,
+        "role": "Layer"
+    },
+    {
+        "id": 5,
+        "role": "Developer"
+    }
+]

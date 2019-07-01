@@ -4,15 +4,11 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class ContactsService {
+export class InfoService {
 
   constructor(
     private http: HttpClient,
   ) { }
-
-  getContacts() {
-    return this.http.get('http://localhost:8882/contacts');
-  }
 
   getInfo() {
     return this.http.get('http://localhost:8882/info')

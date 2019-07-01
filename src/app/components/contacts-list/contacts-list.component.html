@@ -2,15 +2,17 @@
   Contacts
 </h1>
 
-<table *ngIf="isLoaded">
+<table *ngIf="isContactLoaded && isInfoLoaded">
   <tr>
     <td>id</td>
     <td>name</td>
     <td>email</td>
+    <td>role</td>
   </tr>
   <tr *ngFor="let contact of contacts">
     <td>{{contact.id}}</td>
     <td>{{contact.firstName}} {{contact.surname}}</td>
     <td>{{contact.email}}</td>
+    <td>{{getRoleName(contact.role)}}</td>
   </tr>
 </table>
