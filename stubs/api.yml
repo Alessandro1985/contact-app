@@ -8,6 +8,7 @@
       content-type: application/json
       server: stubbedServer/4.2
     file: contacts/all.json
+
 - request:
     url: ^/info/?$
     method: GET
@@ -18,3 +19,15 @@
       content-type: application/json
       server: stubbedServer/4.2
     file: info/all.json
+
+
+- request:
+    url: ^/contact/(\d+)$
+    method: GET
+  response:
+    status: 200
+    latency: 300
+    headers:
+      content-type: application/json
+      server: stubbedServer/4.2
+    file: contacts/<% url[1] %>.json

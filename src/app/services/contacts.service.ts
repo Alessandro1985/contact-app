@@ -17,4 +17,8 @@ export class ContactsService {
   getInfo() {
     return this.http.get('http://localhost:8882/info')
   }
+
+  getById(id) {
+    return this.http.get(`http://localhost:8882/contact/${id}`)
+  }
 }

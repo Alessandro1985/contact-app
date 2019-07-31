@@ -5,7 +5,8 @@
         "surname": "Snow",
         "email": "Jon.Snow@example.com",
         "groupId": 1,
-        "role": 1
+        "role": 1,
+        "numberId": 1
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "surname": "Stark",
         "email": "Ned.Stark@example.com",
         "groupId": 1,
-        "role": 2
+        "role": 2,
+        "numberId": 2
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "surname": "Baratheon",
         "email": "Robert.Baratheon@example.com",
         "groupId": 2,
-        "role": 3
+        "role": 3,
+        "numberId": 3
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "surname": "Lannister",
         "email": "Jaime.Lannister@example.com",
         "groupId": 2,
-        "role": 4
+        "role": 4,
+        "numberId": 4
     },
     {
         "id": 5,
@@ -37,6 +41,7 @@
         "surname": "Targaryen",
         "email": "Daenerys.Targaryen@example.com",
         "groupId": 2,
-        "role": 5
+        "role": 5,
+        "numberId": 5
     }
 ]

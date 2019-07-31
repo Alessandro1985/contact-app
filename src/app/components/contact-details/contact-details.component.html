@@ -1,3 +1,24 @@
-<p>
-  contact-details works!
-</p>
+<ng-container *ngIf="isLoaded">
+  <!-- <pre>{{ contact | json }}</pre> -->
+
+  <ul>
+    <li>{{contact.firstName}}</li>
+    <li>{{contact.surname}}</li>
+    <li>{{contact.email}}</li>
+    <!-- <li>{{contact.address}}</li> -->
+    <li>{{contact.address.address1}}</li>
+    <li>{{contact.address.address2}}</li>
+    <li *ngIf="contact.address.address3">{{contact.address.address3}}</li>
+    <li>{{contact.address.city}}</li>
+    <li>{{contact.address.postcode}}</li>
+    <li>{{contact.role}}</li>
+    <li>Numbers
+      <ul>
+        <li *ngFor="let number of contact.numbers">
+          {{number.label}}
+          {{number.number}}
+        </li>
+      </ul>
+    </li>
+  </ul>
+</ng-container>

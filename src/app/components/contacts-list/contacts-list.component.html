@@ -9,10 +9,31 @@
     <td>email</td>
     <td>role</td>
   </tr>
-  <tr *ngFor="let contact of contacts">
-    <td>{{contact.id}}</td>
+  <tr *ngFor="let contact of contacts" [routerLink]="['/contact', contact.id]">
+    <td>{{contact.id}}</td> 
     <td>{{contact.firstName}} {{contact.surname}}</td>
     <td>{{contact.email}}</td>
     <td>{{getRoleName(contact.role)}}</td>
+    <button id="remove" (click)="deleteRow(contact)">delete row</button>
   </tr>
 </table>
+
+<br>
+<br>
+<div class="container">
+  <form #form="ngForm">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="firstName" ngModel required>
+    </div>
+    <div class="form-group">
+      <label for="alterEgo">email</label>
+      <input type="text" class="form-control" id="email" name="email" ngModel minlength="2">
+    </div>
+    <div class="form-group">
+      <label for="alterEgo">role</label>
+      <input type="number" class="form-control" id="role" name="role" ngModel>
+    </div>
+    <button type="submit" class="btn btn-success" (click)="onSubmit(form)">Submit</button>
+  </form>
+</div>

@@ -6,17 +6,19 @@ import { AppComponent } from './app.component';
 import { ContactsListComponent } from './components/contacts-list/contacts-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactDetailsComponent } from './components/contact-details/contact-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContactsListComponent,
-    ContactDetailsComponent
+    ContactDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
