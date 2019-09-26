@@ -27,16 +27,16 @@ export class ContactsListComponent implements OnInit {
       (data) => this.contacts = data,
       (err) => console.debug(err),
       () => this.isContactLoaded = true
-    )
+    );
 
     this.Info.getInfo().subscribe(
       (data) => this.info = data,
       (err) => console.debug(err),
       () => this.isInfoLoaded = true
-    )
+    );
   }
 
-  getRoleName(roleId: number){
+  getRoleName(roleId: number) {
     return this.info.filter((item) => item.id === roleId)[0].role;
   }
 
@@ -50,13 +50,25 @@ export class ContactsListComponent implements OnInit {
     // }
   }
 
-  addContact(form){
+  addContact(form) {
     const id = this.contacts.length + 1;
-    this.contacts.push({id, ...form})
+    this.contacts.push({id, ...form});
   }
 
   onSubmit(form) {
     console.info(form);
     this.addContact(form.value);
+  }
+
+  showDetails(form) {
+    // this.show.emit(contact);
+  }
+
+  editContact(form) {
+    // this.edit.emit(contact);
+  }
+
+  deleteContact(form) {
+    // this.remove.emit(contact);
   }
 }

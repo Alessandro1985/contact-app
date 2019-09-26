@@ -1,20 +1,38 @@
-<h1>
+<h1 class="container">
   Contacts
 </h1>
 
-<table *ngIf="isContactLoaded && isInfoLoaded">
+<table class="container table table table-hover table-responsive-md" *ngIf="isContactLoaded && isInfoLoaded">
   <tr>
-    <td>id</td>
-    <td>name</td>
-    <td>email</td>
-    <td>role</td>
+    <td scope="row">#</td>
+    <td scope="row">name</td>
+    <td scope="row">email</td>
+    <td scope="row">role</td>
   </tr>
   <tr *ngFor="let contact of contacts" [routerLink]="['/contact', contact.id]">
-    <td>{{contact.id}}</td> 
-    <td>{{contact.firstName}} {{contact.surname}}</td>
-    <td>{{contact.email}}</td>
-    <td>{{getRoleName(contact.role)}}</td>
-    <button id="remove" (click)="deleteRow(contact)">delete row</button>
+    <td scope="row">{{contact.id}}</td> 
+    <td scope="row">{{contact.firstName}} {{contact.surname}}</td>
+    <td scope="row">{{contact.email}}</td>
+    <td scope="row">{{getRoleName(contact.role)}}</td>
+    <td>
+
+      <span class="float-right">
+
+        <button (click)="showDetails(c)" class="btn btn-outline-primary mb-1 btn-sm contactButton">
+          DETAILS
+        </button>
+
+        <button (click)="editContact(c)" class="btn btn-outline-primary mb-1 btn-sm contactButton">
+          EDIT
+        </button>
+
+        <button (click)="deleteContact(c)" class="btn btn-outline-danger mb-1 btn-sm contactButton">
+          DELETE
+        </button>
+
+      </span>
+
+    </td>
   </tr>
 </table>
 
@@ -34,6 +52,6 @@
       <label for="alterEgo">role</label>
       <input type="number" class="form-control" id="role" name="role" ngModel>
     </div>
-    <button type="submit" class="btn btn-success" (click)="onSubmit(form)">Submit</button>
+    <button type="submit" class="btn btn-outline-primary mb-1 btn-sm" (click)="onSubmit(form)"><i class="fa fa-plus-square" aria-hidden="true"></i> New </button>
   </form>
 </div>
