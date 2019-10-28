@@ -8,12 +8,14 @@
     <td scope="row">name</td>
     <td scope="row">email</td>
     <td scope="row">role</td>
+    <td></td>
   </tr>
   <tr *ngFor="let contact of contacts" [routerLink]="['/contact', contact.id]">
-    <td scope="row">{{contact.id}}</td> 
+    <td scope="row">{{contact.id}}</td>
     <td scope="row">{{contact.firstName}} {{contact.surname}}</td>
     <td scope="row">{{contact.email}}</td>
-    <td scope="row">{{getRoleName(contact.role)}}</td>
+    <!-- <td scope="row">{{getRoleName(contact.role)}}</td> -->
+    <td scope="row">{{contact.role}}</td>
     <td>
 
       <div class="float-right">
@@ -44,14 +46,21 @@
       <label for="name">Name</label>
       <input type="text" class="form-control" id="name" name="firstName" ngModel required>
     </div>
+
     <div class="form-group">
-      <label for="alterEgo">email</label>
+      <label for="email">Email</label>
       <input type="text" class="form-control" id="email" name="email" ngModel minlength="2">
     </div>
+
     <div class="form-group">
-      <label for="alterEgo">role</label>
-      <input type="number" class="form-control" id="role" name="role" ngModel>
+      <label for="role">Role</label>
+      <select type="text" class="form-control" id="role" name="role" ngModel>
+        <option value="" disabled>Choose your role</option>
+        <option *ngFor="let item of info" [value]="item.role">{{ item.role }} </option>
+      </select>
     </div>
-    <button type="submit" class="btn btn-outline-primary mb-1 btn-sm" (click)="onSubmit(form)"><i class="fa fa-plus-square" aria-hidden="true"></i> New </button>
+
+    <button type="submit" class="btn btn-outline-primary mb-1 btn-sm" (click)="onSubmit(form)"><i
+        class="fa fa-plus-square" aria-hidden="true"></i> New </button>
   </form>
 </div>
