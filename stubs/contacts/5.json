@@ -1,0 +1,20 @@
+{
+  "id": 5,
+  "firstName": "Matt",
+  "surname": "Bellamy",
+  "email": "Matt.Bellamy@gmail.com",
+  "address": {
+      "address1": "2 Canary Wharf",
+      "address2": "London",
+      "address3": "",
+      "city": "London",
+      "postcode": "WEL 023"
+  },
+  "img": "https://wallpapercave.com/wp/wp2242899.jpg",
+  "groupId": 1,
+  "role": 1,
+  "phoneNumber": "+44 (0) 108123456",
+  "mobileNumber": "+44 (0) 381234561",
+  "website": "https://www.,mattbellamy.com/",
+  "recordLabel": "Warner Records"
+}

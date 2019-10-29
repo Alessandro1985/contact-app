@@ -1,25 +1,20 @@
 {
-    "id": 2,
-    "firstName": "Ned",
-    "surname": "Stark",
-    "email": "Ned.Stark@example.com",
-    "address": {
-        "address1": "Fake House",
-        "address2": "Fake Street",
-        "address3": "",
-        "city": "Derby",
-        "postcode": "FK01 0FK"
-    },
-    "groupId": 1,
-    "role": 1,
-    "numbers": [
-        {
-            "label": "Num 1",
-            "number": "0781234561"
-        },
-        {
-            "label": "Num 2",
-            "number": "0781234562"
-        }
-    ]
+  "id": 2,
+  "firstName": "Michael Peter (Flea)",
+  "surname": "Balzary",
+  "email": "Flea.RedHotChiliPepper@gmail.com",
+  "address": {
+      "address1": "2 High street",
+      "address2": "Carlsbad",
+      "address3": "",
+      "city": "Carlsbad",
+      "postcode": "CAL 089"
+  },
+  "img": "https://cdn.imgbin.com/25/5/17/imgbin-flea-rock-and-roll-hall-of-fame-red-hot-chili-peppers-bassist-musician-flea-wsKnEYs5T8ieRdJ8acAydV8Fy.jpg",
+  "groupId": 1,
+  "role": 1,
+  "phoneNumber": "+44 (0) 208123456",
+  "mobileNumber": "+44 (0) 781234561",
+  "website": "https://www.flea.com/",
+  "recordLabel": "Warner Music Group"
 }

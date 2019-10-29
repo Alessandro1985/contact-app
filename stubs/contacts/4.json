@@ -1,0 +1,20 @@
+{
+  "id": 4,
+  "firstName": "Roger",
+  "surname": "Waters",
+  "email": "Roger.Waters@gmail.com",
+  "address": {
+      "address1": "via del vesuvio 5",
+      "address2": "Naples",
+      "address3": "",
+      "city": "Naples",
+      "postcode": "NAP 176"
+  },
+  "img": "https://smhttp-ssl-58701.nexcesscdn.net/media/artists/File55b27312e8959.png",
+  "groupId": 1,
+  "role": 1,
+  "phoneNumber": "+39 (0) 208123456",
+  "mobileNumber": "+39 (0) 781234561",
+  "website": "https://www.roger-waters.com/",
+  "recordLabel": "Columbia Records"
+}

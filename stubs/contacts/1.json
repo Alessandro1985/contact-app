@@ -1,25 +1,20 @@
 {
     "id": 1,
-    "firstName": "Jon",
-    "surname": "Snow",
-    "email": "Jon.Snow@example.com",
+    "firstName": "Liam",
+    "surname": "Gallagher",
+    "email": "Liam.Gallagher@gmail.com",
     "address": {
-        "address1": "Fake House",
-        "address2": "Fake Street",
+        "address1": "1 Notting Hill",
+        "address2": "London",
         "address3": "",
-        "city": "Derby",
-        "postcode": "FK01 0FK"
+        "city": "London",
+        "postcode": "WEL 1FK"
     },
+    "img": "https://www.coolaccidents.com/sites/g/files/g2000006916/files/inline-images/Liam%20Gallagher%20%281%29.png",
     "groupId": 1,
     "role": 1,
-    "numbers": [
-        {
-            "label": "Num 1",
-            "number": "0781234561"
-        },
-        {
-            "label": "Num 2",
-            "number": "0781234562"
-        }
-    ]
+    "phoneNumber": "+44 (0) 208123456",
+    "mobileNumber": "+44 (0) 781234561",
+    "website": "https://www.liamgallagher.com/whymewhynot/",
+    "recordLabel": "Creation Record"
 }

@@ -12,13 +12,13 @@
   </tr>
   <tr *ngFor="let contact of contacts">
     <td contenteditable="true">
-      <span scope="row" (keyup)="changeValue(id, 'companyName', $event)" >{{contact.id}}</span>
+      <span scope="row" (keyup)="changeValue(id, 'companyName', $event)">{{contact.id}}</span>
     </td>
     <td contenteditable="true">
       <span scope="row" (keyup)="changeValue(id, 'companyName', $event)">{{contact.firstName}} {{contact.surname}}</span>
     </td>
     <td contenteditable="true">
-      <span scope="row" (keyup)="changeValue(id, 'companyName', $event)">{{contact.email}}></span>
+      <span scope="row" (keyup)="changeValue(id, 'companyName', $event)">{{contact.email}}</span>
     </td>
     <td contenteditable="true">
         <span scope="row">{{contact.role}}</span>
@@ -27,7 +27,7 @@
 
       <div class="float-right">
 
-        <button (click)="showDetails(c)" class="btn btn-outline-primary mb-1 btn-sm contactButton" [routerLink]="['/contact', contact.id]" routerLinkActive="is-active">
+        <button class="btn btn-outline-primary mb-1 btn-sm contactButton" [routerLink]="['/contact', contact.id]" routerLinkActive="is-active">
           DETAILS
         </button>
 
