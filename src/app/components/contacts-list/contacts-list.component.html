@@ -2,7 +2,7 @@
   Contacts
 </h1>
 
-<table class="container table table table-hover table-responsive-md" *ngIf="isContactLoaded && isInfoLoaded">
+<table class="container table table table-hover table-responsive-md table-editable" *ngIf="isContactLoaded && isInfoLoaded">
   <tr>
     <td scope="row">#</td>
     <td scope="row">name</td>
@@ -10,22 +10,25 @@
     <td scope="row">role</td>
     <td></td>
   </tr>
-  <tr *ngFor="let contact of contacts" [routerLink]="['/contact', contact.id]">
-    <td scope="row">{{contact.id}}</td>
-    <td scope="row">{{contact.firstName}} {{contact.surname}}</td>
-    <td scope="row">{{contact.email}}</td>
-    <!-- <td scope="row">{{getRoleName(contact.role)}}</td> -->
-    <td scope="row">{{contact.role}}</td>
+  <tr *ngFor="let contact of contacts">
+    <td contenteditable="true">
+      <span scope="row" (keyup)="changeValue(id, 'companyName', $event)" >{{contact.id}}</span>
+    </td>
+    <td contenteditable="true">
+      <span scope="row" (keyup)="changeValue(id, 'companyName', $event)">{{contact.firstName}} {{contact.surname}}</span>
+    </td>
+    <td contenteditable="true">
+      <span scope="row" (keyup)="changeValue(id, 'companyName', $event)">{{contact.email}}></span>
+    </td>
+    <td contenteditable="true">
+        <span scope="row">{{contact.role}}</span>
+    </td>
     <td>
 
       <div class="float-right">
 
-        <button (click)="showDetails(c)" class="btn btn-outline-primary mb-1 btn-sm contactButton">
+        <button (click)="showDetails(c)" class="btn btn-outline-primary mb-1 btn-sm contactButton" [routerLink]="['/contact', contact.id]" routerLinkActive="is-active">
           DETAILS
-        </button>
-
-        <button (click)="editContact(c)" class="btn btn-outline-primary mb-1 btn-sm contactButton">
-          EDIT
         </button>
 
         <button (click)="deleteRow(contact)" class="btn btn-outline-danger mb-1 btn-sm contactButton">

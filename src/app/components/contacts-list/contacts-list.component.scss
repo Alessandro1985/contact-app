@@ -5,3 +5,8 @@ margin-right: 10px;
 .h1ContactContainer {
   padding: 30px;
 }
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}

@@ -60,20 +60,4 @@ export class ContactsListComponent implements OnInit {
     this.addContact(form.value);
   }
 
-  showDetails(form) {
-    // this.show.emit(contact);
-  }
-
-  editContact(form) {
-    // this.edit.emit(contact);
-  }
-
-  deleteContact(form) {
-    // this.remove.emit(contact);
-  }
-
-
-  orderId() {
-    
-  }
 }
